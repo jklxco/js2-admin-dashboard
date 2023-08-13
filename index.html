@@ -10,61 +10,88 @@
 <body>
     <div id="dashboard-container">
         <nav id="sidebar">
-            <div id="logo">Dashboard</div>
+            <div id="logo">
+                <img src="./icons/anvil.svg" alt="Anvil Brand Logo" width="50px" >
+                <h2>Dashboard</h2>
+            </div>
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li><img><p>Home</p></li>
+                <li><img><p>Profile</p></li>
+                <li><img><p>Messages</p></li>
+                <li><img><p>History</p></li>
+                <li><img><p>Tasks</p></li>
+                <li><img><p>Communities</p></li>
             </ul>
             <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li><img><p>Settings</p></li>
+                <li><img><p>Support</p></li>
+                <li><img><p>Privacy</p></li>
             </ul>
         </nav>
 
-        <div id="header">
-            <div id="top-row">  
-                <div id="search-bar">SEARCH</div>
-                <div id="notifications">NOTIFICATIONS</div>
-                <div id="user-details">USER DETAILS</div>
-            </div>
-            <div id="bottom-row">
-                <div id="welcome-details">WELCOME USER</div>
-                <div id="controls">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
+        <div id="header"> 
+            <input type="text" id="search">
+            <div id="user-details">USER DETAILS</div>
+            <div id="welcome-details">WELCOME USER</div>
+            <div id="controls">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
             </div>
         </div>
 
         <main id="main-content">
-            <div id="project-container">
+            <div id="main-container">
                 <h3>Your Projects</h3>
-                <card>Project 1</card>
-                <card>Project 2</card>
-                <card>Project 3</card>
-                <card>Project 4</card>
-                <card>Project 5</card>
-                <card>Project 6</card>
+                <div id="project-container">
+                    <div class="card">
+                        <h4>Project 1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    <div class="card">
+                        <h4>Project 2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    <div class="card">
+                        <h4>Project 3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    <div class="card">
+                        <h4>Project 4</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    <div class="card">
+                        <h4>Project 5</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    <div class="card">
+                        <h4>Project 6</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
             </div>
 
             <div id="announcement-container">
                 <h3>Announcements</h3>
-                <div>Site Maintenance</div>
-                <div>Community Share Day</div>
-                <div>Updated Privacy Policy</div>
+                <div class="announcement-item">
+                    <h4>Site Maintenance</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+                <div class="announcement-item">
+                    <h4>Community Share Day</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="announcement-item">
+                    <h4>Updated Privacy Policy</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
             </div>
             <div id="trending-container">
                 <h3>Trending</h3>
-                <div>User 1</div>
-                <div>User 2</div>
-                <div>User 3</div>
-                <div>User 4</div>
+                <div class="trending-user">User 1</div>
+                <div class="trending-user">User 2</div>
+                <div class="trending-user">User 3</div>
+                <div class="trending-user">User 4</div>
             </div>
         </main>
     </div>
