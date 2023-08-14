@@ -7,8 +7,8 @@
 :root {
     --clr-main-bg-light: #EEE;
     --clr-main-light: #FFF;
-    --clr-accent-main-light: rgb(236, 178, 17);
-    --clr-accent-secondary-light: rgb(0, 119, 255);
+    --clr-accent-main-light: rgb(0, 119, 255);
+    --clr-accent-secondary-light: rgb(236, 178, 17);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -30,12 +30,51 @@
     align-items: center;
 }
 
+#search-bar {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#header svg {
+    fill: black;
+}
+
 #search {
     height: 2rem;
     outline: none;
     border: none;
     background: var(--clr-main-bg-light);
     border-radius: 2rem;
+}
+
+#search {
+    width: 80%;
+}
+
+
+
+#controls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#controls > button {
+    border-radius: 2rem;
+    padding: 10px 30px;
+    color: var(--clr-main-light);
+    background-color: var(--clr-accent-main-light);
+    border: none;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#controls > button:last-child {
+    margin-right: 50px;
+}
+
+#user-details {
+    display: flex;
 }
 
 nav {
@@ -52,12 +91,12 @@ h2,
 nav > ul {
     padding: 2rem;
     font-size: 1.25rem;
-    color: #FFFEEE;
+    color: var(--clr-main-light);
     font-weight: bold;
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     display: inline;
     padding-left: 10px;
     
@@ -66,11 +105,38 @@ h2 {
 #logo {
     display: flex;
     padding-left: 10px;
+    justify-content: center;
+}
+
+#logo > svg {
+    width: 3rem;
+    padding-right: 0px;
+}
+
+nav > ul {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 nav > ul > li {
     list-style-type: none;
+    
 }
+
+li > p {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+svg {
+    width: 2rem;
+    fill: var(--clr-main-light);
+    padding-right: 5px;
+}
+
+
+
 
 main {
     background-color: var(--clr-main-bg-light);
@@ -141,10 +207,3 @@ p {
     padding: 0px;
 }
 
-#trending-container {
- 
-}
-
-.trending-user {
-
-}
